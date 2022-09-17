@@ -1,0 +1,32 @@
+*{
+    font-family: Tahoma;
+}
+h1.sub{
+    text-align: center;
+    padding-top: 10px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+span.name{
+    padding-left: 5em;
+}
+.btn{
+   margin: 0.5em;
+}
+.btn_cn{
+    width:25%;
+    height: 5em;
+}
+.container_btn_cn{
+    display: flex;
+}
+.jumbotron-fluid{
+    bottom: 0;
+    margin-top: 10em;
+}
+.form-inline{
+    position: absolute;
+    right: 0;
+}

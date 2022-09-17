@@ -1,0 +1,17 @@
+{% extends 'admin/base.html' %}
+
+{% block body %}
+<h2 class="text-primary" style="text-align:center">QUY ĐỊNH KHÁM CỦA PHÒNG MẠCH</h2>
+<form method="post" action="{{ url_for('admin_change')}}">
+    <div class="form-group">
+        <label style="display:inline; margin-right:30px" for="patient">Số lượng bệnh nhân tối đa khám trong ngày:</label>
+        <input type="number" class="form-control" style="display:inline; width:10%" id="patient" name="max_patient">
+    </div>
+    <div class="form-group">
+        <label style="display:inline; margin-right:30px" for="money">Số tiền khám:</label>
+        <input type="number" class="form-control" style="display:inline; width:20%" id="money" name="max_money" step="1000">
+    </div>
+    <input type="submit" value="Lưu" class="btn btn-info">
+</form>
+
+{% endblock %}
